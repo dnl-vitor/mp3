@@ -68,9 +68,7 @@ Para tocar músicas de outra pasta, passe o caminho como argumento:
 
 O script `run.sh` compila e executa o projeto em um passo só.
 
-## Releases
-
-Para executar o projeto sem a compilação do código fonte, baixe o arquivo zip disponibilizado em releases, coloque sua playlist dentro da pasta assets.
+Para executar o projeto sem a compilação do código fonte, baixe o arquivo zip disponibilizado em releases, coloque sua playlist dentro da pasta assets - nesse caso não é necessário executar o arquivo na raiz do projeto, duplo clique ou comando no executável bastam -.
 
 ## Músicas
 
