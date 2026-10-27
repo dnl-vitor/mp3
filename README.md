@@ -68,6 +68,10 @@ Para tocar músicas de outra pasta, passe o caminho como argumento:
 
 O script `run.sh` compila e executa o projeto em um passo só.
 
+## Releases
+
+Para executar o projeto sem a compilação do código fonte, baixe o arquivo zip disponibilizado em releases, coloque sua playlist dentro da pasta assets.
+
 ## Músicas
 
 Coloque seus arquivos `.mp3` na pasta `assets/`. As músicas **não** fazem parte do repositório (o `.gitignore` ignora arquivos de áudio).
