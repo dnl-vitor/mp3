@@ -1,0 +1,6 @@
+build/
+assets/
+cmake-build-*/
+.idea/
+compile_commands.json
+*.mp3
