@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     SetTargetFPS(60);
 
     Player player;
-    player.LoadFolder(argc > 1 ? argv[1] : "assets");    
+    player.LoadFolder(argc > 1 ? argv[1] : "playlist");    
     player.Play(0);
 
     // layout derivado do tamanho da janela
