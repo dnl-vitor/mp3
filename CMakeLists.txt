@@ -10,17 +10,15 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 set(RAYLIB_VERSION 6.0)
 find_package(raylib ${RAYLIB_VERSION} QUIET)
-set(RAYLIB_VERSION 6.0)
-find_package(raylib ${RAYLIB_VERSION} QUIET)
 if(NOT raylib_FOUND)
     include(FetchContent)
     FetchContent_Declare(
         raylib
-        GIT_REPOSITORY https://github.com/raysan5/raylib.git
-        GIT_TAG ${RAYLIB_VERSION}
-        GIT_SHALLOW TRUE
+        URL https://github.com/raysan5/raylib/archive/refs/tags/${RAYLIB_VERSION}.tar.gz
+        DOWNLOAD_EXTRACT_TIMESTAMP TRUE
     )
-    set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+   set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+    set(BUILD_GAMES OFF CACHE BOOL "" FORCE) 
     FetchContent_MakeAvailable(raylib)
 endif()
 
