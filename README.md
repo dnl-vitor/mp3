@@ -54,7 +54,7 @@ cmake -B build
 cmake --build build
 ```
 
-O executável é gerado em `build/bin/mp3`. Execute-o **a partir da raiz do projeto**, para que a pasta `assets` seja encontrada:
+O executável é gerado em `build/bin/mp3`. Execute-o **a partir da raiz do projeto**, para que a pasta `playlist` seja encontrada:
 
 ```bash
 ./build/bin/mp3
@@ -68,11 +68,11 @@ Para tocar músicas de outra pasta, passe o caminho como argumento:
 
 O script `run.sh` compila e executa o projeto em um passo só.
 
-Para executar o projeto sem a compilação do código fonte, baixe o arquivo zip disponibilizado em releases, coloque sua playlist dentro da pasta assets - nesse caso não é necessário executar o arquivo na raiz do projeto, duplo clique ou comando no executável bastam -.
+Para executar o projeto sem a compilação do código fonte, baixe o arquivo zip disponibilizado em releases, coloque sua playlist dentro da pasta playlist - nesse caso não é necessário executar o arquivo na raiz do projeto, duplo clique ou comando no executável bastam -.
 
 ## Músicas
 
-Coloque seus arquivos `.mp3` na pasta `assets/`. As músicas **não** fazem parte do repositório (o `.gitignore` ignora arquivos de áudio).
+Coloque seus arquivos `.mp3` na pasta `playlist/`. As músicas **não** fazem parte do repositório (o `.gitignore` ignora arquivos de áudio).
 
 Por enquanto:
 
@@ -83,7 +83,7 @@ Por enquanto:
 
 ```
 .
-├── assets/          # suas músicas (.mp3)
+├── playlist/          # suas músicas (.mp3)
 ├── docs/            # imagens usadas neste README
 ├── main.cpp         # janela, layout e laço principal
 ├── player.h/.cpp    # playlist, reprodução, aleatório e volume
@@ -95,7 +95,7 @@ Por enquanto:
 ## Solução de problemas
 
 **A janela abre com a mensagem "Nenhuma musica encontrada".**
-Confira se há arquivos `.mp3` na pasta `assets/` e se você está executando o programa a partir da raiz do projeto (a pasta é procurada em relação ao diretório de onde o programa é executado). Você também pode indicar a pasta diretamente: `./build/bin/mp3 /caminho/para/as/musicas`.
+Confira se há arquivos `.mp3` na pasta `playlist/` e se você está executando o programa a partir da raiz do projeto (a pasta é procurada em relação ao diretório de onde o programa é executado). Você também pode indicar a pasta diretamente: `./build/bin/mp3 /caminho/para/as/musicas`.
 
 **Erro ao compilar a raylib no Linux.**
 Verifique se os pacotes listados em [Dependências no Linux](#dependências-no-linux) estão instalados.
